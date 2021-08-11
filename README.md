@@ -14,7 +14,7 @@ Simple utility to allocate memory on a computer
 
 ```
 cd /tmp
-git clone https://github.com/julman99/eatmemory.git
+git clone https://github.com/MuhHanif/eatmemory.git
 cd eatmemory
 sudo make install
 ```
