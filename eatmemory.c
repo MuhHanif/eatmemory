@@ -34,6 +34,8 @@ bool eat(long total,int chunk){
 	long i;
 	for(i=0;i<total;i+=chunk){
 		short *buffer=malloc(sizeof(char)*chunk);
+		//added memory lock, preventing alocated memory to be shifted into page/swap
+		mlock(buffer, sizeof(char)*chunk);
         if(buffer==NULL){
             return false;
         }
